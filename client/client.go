@@ -4,9 +4,9 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"github.com/gabrielleitezup/grpc-plugin-server/pkg/datasource"
 	"google.golang.org/grpc"
 	"log"
-	"pluginserver/pkg/datasource"
 )
 
 
@@ -29,5 +29,5 @@ func main() {
 		log.Fatalf("fail to dial: %v", err)
 	}
 
-	log.Println(metricList)
+	fmt.Println(metricList)
 }

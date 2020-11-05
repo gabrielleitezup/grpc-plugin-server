@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
+	"github.com/gabrielleitezup/grpc-plugin-server/internal"
+	"github.com/gabrielleitezup/grpc-plugin-server/pkg/datasource"
 	"google.golang.org/grpc"
 	"log"
 	"net"
-	"pluginserver/internal"
-	"pluginserver/pkg/datasource"
 )
 
 func newServer() *internal.DatasourceServer {

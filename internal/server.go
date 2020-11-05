@@ -4,9 +4,9 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"github.com/gabrielleitezup/grpc-plugin-server/pkg/datasource"
 	"github.com/prometheus/client_golang/api"
 	v1 "github.com/prometheus/client_golang/api/prometheus/v1"
-	"pluginserver/pkg/datasource"
 	"time"
 )
 
