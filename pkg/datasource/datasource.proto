@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package pkg;
+
+option go_package = "pluginserver/pkg/datasource";
+
+service Datasource {
+  rpc GetMetrics(MetricsRequest) returns (MetricList) {}
+}
+
+message MetricList {
+  repeated string metrics = 1;
+}
+
+message MetricsRequest {
+  bytes configuration = 1;
+}
+//google.protobuf.Empty
