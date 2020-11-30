@@ -27,7 +27,7 @@ func getPrometheusApiClient(datasourceConfiguration []byte) (api.Client, error) 
 }
 
 func (s *DatasourceServer) GetMetrics(ctx context.Context, datasourceConfiguration *datasource.MetricsRequest) (*datasource.MetricList, error) {
-	fmt.Println("IT JUST WORKS")
+	fmt.Println(stringzona)
 	apiClient, err := getPrometheusApiClient(datasourceConfiguration.Configuration)
 	if err != nil {
 		return nil, err
