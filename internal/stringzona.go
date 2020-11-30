@@ -1,3 +1,3 @@
 package internal
 
-var stringzona = "IT JUST WORKS EOQ"
+var stringzona = "UP TO DATE"
