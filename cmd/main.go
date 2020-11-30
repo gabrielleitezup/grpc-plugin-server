@@ -13,6 +13,10 @@ func newServer() *internal.DatasourceServer {
 	s := &internal.DatasourceServer{}
 	return s
 }
+func newRonaldoServer() *internal.RonaldoServer {
+	s := &internal.RonaldoServer{}
+	return s
+}
 
 func main() {
 
@@ -25,5 +29,6 @@ func main() {
 
 	grpcServer := grpc.NewServer(opts...)
 	datasource.RegisterDatasourceServer(grpcServer, newServer())
+	datasource.RegisterDatasourceServer(grpcServer, newRonaldoServer())
 	grpcServer.Serve(lis)
 }
